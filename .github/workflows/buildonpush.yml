@@ -1,0 +1,16 @@
+name: Test Build on Push
+run-name: ${{ github.actor }} is running a build.
+on: [push]
+jobs:
+  build:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build something
+        run: |
+          dotnet build -c Release
+      - name: Upload artifact
+        uses: actions/upload-artifact@v1.0.0
+        with:
+          name: servuo_push_build
+          path: "./"
