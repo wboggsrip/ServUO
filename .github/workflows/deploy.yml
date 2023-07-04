@@ -13,7 +13,7 @@ on:
 
 env:
 
-  SUO_OUTPUT_PATH: '../../bin/dist'
+  SUO_OUTPUT_PATH: './'
   SUO_ZIP_NAME: "ServUO-dev-preview-release.zip"
 
   DOTNET_NOLOGO: false
