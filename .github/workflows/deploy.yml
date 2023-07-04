@@ -60,7 +60,7 @@ jobs:
         exclusions: '*.cs *.zip manifest.xml'
             
     - name: Move output
-      run: mv "${{ env.SUO_OUTPUT_PATH }}/${{ env.CUO_ZIP_NAME }}" upload
+      run: mv "${{ env.SUO_OUTPUT_PATH }}/${{ env.SUO_ZIP_NAME }}" upload
 
 #    name: Upload Release Asset
     - name: Create Release
